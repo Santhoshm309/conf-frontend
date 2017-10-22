@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton="true" color="teal">
     <ion-title>
-      Ionic Blank
+      Conference User
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-tabs tabsPlacement="top">
+    <ion-tab [root]="loginPage" tabTitle="LOGIN"></ion-tab>
+    <ion-tab [root]="signupPage" tabTitle="SIGNUP"></ion-tab>
+  </ion-tabs>
 </ion-content>

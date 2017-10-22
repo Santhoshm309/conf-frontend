@@ -1,0 +1,36 @@
+<ion-content>
+
+  <h3 style="text-align: left"></h3>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="conference.name"  type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Venue</ion-label>
+    <ion-input [(ngModel)]="conference.venue" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Judge</ion-label>
+    <ion-input [(ngModel)]="conference.judge" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="conference.eventdate"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Description</ion-label>
+    <ion-textarea [(ngModel)]="conference.description"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-input [(ngModel)]="conference.category" type="text"></ion-input>
+  </ion-item>
+
+  <div padding>
+    <button ion-button color="crimson" (click)="addConference()" style="margin-left: 20%; width: 60%">ADD CONFERENCE</button>
+  </div>
+
+
+
+</ion-content>

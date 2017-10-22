@@ -1,0 +1,15 @@
+
+<ion-content>
+  <ion-list inset>
+    <button ion-item *ngFor="let item of conferenceList" (click)="itemSelected(item.id)">
+      <h1 style="vertical-align: middle; color: crimson">{{ item.name }}</h1>
+      <div style="float: right">
+        <h6><span style="font-weight: 600">Judge</span> :    {{item.judge}}</h6>
+        <h6><span style="font-weight: 600">Venue</span> :    {{item.venue}}</h6>
+      </div>
+    </button>
+  </ion-list>
+
+</ion-content>
+
+

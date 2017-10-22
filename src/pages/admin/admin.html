@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="teal">
+    <ion-title>
+        Admin
+      <button ion-button clear style="float: right" color="black" (click)="logout()">LOGOUT</button>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <button ion-item *ngFor="let item of conferenceList" (click)="itemSelected(item.id)">
+      <h1 style="vertical-align: middle; color: crimson">{{ item.name }}</h1>
+     <div style="float: right">
+       <h6><span style="font-weight: 600">Judge</span> :    {{item.judge}}</h6>
+       <h6><span style="font-weight: 600">Venue</span> :    {{item.venue}}</h6>
+     </div>
+    </button>
+  </ion-list>
+
+  <ion-fab bottom right> <button color="crimson" ion-fab mini (click)="openPop()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
+

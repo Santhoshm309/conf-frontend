@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar hideBackButton="true" color="teal">
+    <ion-title>
+      USER
+      <div style="float: right">
+        <button ion-button clear  color="black" (click)="logout()">LOGOUT</button>
+      </div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-tabs tabsPlacement="top" cach>
+    <ion-tab [root]="allConferences" tabTitle="ALL CONFERENCES"></ion-tab>
+    <ion-tab [root]="subConferences" tabTitle="SUB CONFERENCES"></ion-tab>
+  </ion-tabs>
+</ion-content>
